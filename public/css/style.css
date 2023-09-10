@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans',Sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #19191d;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  -webkit-border-radius: 12px 12px 0 0;
+  -moz-border-radius: 12px 12px 0 0;
+  -ms-border-radius: 12px 12px 0 0;
+  -o-border-radius: 12px 12px 0 0;
+}
+table thead {
+  background-color: #1f1f24;
+}
+table thead tr th {
+  padding: 15px 20px;
+  font-size: 23px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+table tbody {
+  background-color: #25252b;
+}
+table tbody tr {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border-bottom: 2px solid #19191d;
+}
+table tbody tr td {
+  padding: 15px 20px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #777;
+}
+table tbody tr:hover {
+  background-color: #2e2e36;
+}
+table tbody tr:hover td {
+  color: #fff;
+}
+
+table tbody tr .controllers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+table tbody tr .controllers a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 40px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  background-color: #007bff;
+  color: #fff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+table tbody tr td a:hover {
+  background-color: #026fe3;
+}
+
+table tbody tr .controllers form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  background-color: #df0000;
+  color: #fff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-size: 18px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+}
+table tbody tr td form button:hover {
+  cursor: pointer;
+  background-color: #d30000;
+}
+
+.link-add-user {
+  padding: 13px;
+  margin-top: 40px;
+  width: 300px;
+  height: 65px;
+  color: #777;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  background-color: #25252b;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.link-add-user:hover {
+  background-color: #2e2e36;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body .add-edit {
+  width: 450px;
+  height: 550px;
+  background-color: #25252b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+body .add-edit h1 {
+  font-size: 35px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+body .add-edit div {
+  display: flex;
+  flex-direction: column;
+}
+
+body .add-edit div label {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+body .add-edit div input {
+  width: 330px;
+  height: 50px;
+  outline: none;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-size: 20px;
+  padding-left: 20px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  background-color: #2e2e36;
+  outline: 0;
+  border: 0;
+  color: #fff;
+}
+body .add-edit div input:focus {
+background-color: #19191d;
+}
+
+body .add-edit button {
+  width: 200px;
+  height: 60px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #2e2e36;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-size: 25px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+body .add-edit button:hover {
+  background-color: #19191d;
+  cursor: pointer;
+}

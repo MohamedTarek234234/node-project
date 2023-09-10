@@ -1,0 +1,40 @@
+<%- include('./includes/start-head.ejs') %>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>controllers</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% if(users.length === 0) { %>
+        <tr>
+          <td> - </td>
+          <td> - </td>
+          <td> - </td>
+          <td> - </td>
+        </tr>
+      <% } else { %>
+        <% for(let user of users) { %>
+          <tr>
+            <td><%= user.id %></td>
+            <td><%= user.name %></td>
+            <td><%= user.email %></td>
+            <td class="controllers">
+              <a href="/edit-user?userId=<%= user.id %>">edit</a>
+              <form action="/delete-user" method="post">
+                <input type="hidden" name="userId" value="<%= user.id %>">
+                <button type="submit">delete</button>
+              </form>
+            </td>
+          </tr>
+        <% } %>
+      <% } %>
+    </tbody>
+  </table>
+  <a class="link-add-user" href="/add-user">Add New User</a>
+</body>
+<%- include('./includes/end-head.ejs') %>

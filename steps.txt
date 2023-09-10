@@ -1,0 +1,14 @@
+npm init
+
+- devDependencies -
+--------------------
+npm install nodemon --save-dev
+
+- Dependencies -
+--------------------
+npm install --save express
+npm install --save body-parser
+npm install --save ejs
+
+npm install --save uuid
+

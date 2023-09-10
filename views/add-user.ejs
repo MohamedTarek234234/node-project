@@ -1,0 +1,17 @@
+<%- include('./includes/start-head.ejs') %>
+<body>
+  <form action="/add-user" method="post" class="add-edit">
+    <h1>Add New User</h1>
+    <div>
+      <label for="name">name</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div>
+      <label for="email">email</label>
+      <input type="email" name="email" id="email">
+    </div>
+    <button type="submit">Add</button>
+  </form>
+
+</body>
+<%- include('./includes/end-head.ejs') %>

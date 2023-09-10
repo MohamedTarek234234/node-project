@@ -1,0 +1,18 @@
+<%- include('./includes/start-head.ejs') %>
+<body>
+  <form action="/edit-user" method="post" class="add-edit">
+    <h1>edit User</h1>
+    <input type="hidden" name="userId" value="<%= userData.id %>">
+    <div>
+      <label for="name">name</label>
+      <input type="text" name="name" id="name" value="<%= userData.name %>">
+    </div>
+    <div>
+      <label for="email">email</label>
+      <input type="email" name="email" id="email" value="<%= userData.email %>">
+    </div>
+    <button type="submit">Update</button>
+  </form>
+
+</body>
+<%- include('./includes/end-head.ejs') %>
